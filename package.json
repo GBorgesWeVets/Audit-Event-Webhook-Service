@@ -16,7 +16,8 @@
     "@azure/cosmos": "^4.9.2",
     "axios": "^1.14.0",
     "dotenv": "^17.4.1",
-    "fastify": "^5.8.4"
+    "fastify": "^5.8.4",
+    "uuid": "^13.0.0"
   },
   "devDependencies": {
     "@types/node": "^25.5.2",

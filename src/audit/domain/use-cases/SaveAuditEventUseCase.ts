@@ -6,6 +6,7 @@ export class SaveAuditEventUseCase {
 
   async execute(payload: any) {
     const event = AuditEvent.create({
+      _id: payload._id,
       eventId: payload.eventId || payload?.eventId || crypto.randomUUID(),
       trigger: payload.trigger,
       channel: payload?.destination?.type,

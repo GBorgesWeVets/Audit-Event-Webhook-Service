@@ -1,4 +1,5 @@
 export interface AuditEventProps {
+  _id: string,
   eventId: string
   trigger: string
   channel?: string
