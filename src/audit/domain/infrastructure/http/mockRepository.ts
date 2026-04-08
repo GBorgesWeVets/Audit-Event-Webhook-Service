@@ -20,6 +20,8 @@ export const mockAuditRepo = {
     };
 
     mockDb.push(event);
+    console.log("Salvando no mock");
+    
     return event;
   },
 

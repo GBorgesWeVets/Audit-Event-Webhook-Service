@@ -12,6 +12,7 @@ export async function registerWebhookRoutes(app: FastifyInstance, repo: any) {
     }
 
     const saved = await repo.save(payload);
+        console.log("salvando na Azure");
     return reply.status(200).send(saved);
   });
 
@@ -20,5 +21,6 @@ export async function registerWebhookRoutes(app: FastifyInstance, repo: any) {
 
     const events = await repo.find({ trigger, status, channel });
     return reply.status(200).send(events);
+
   });
 }
