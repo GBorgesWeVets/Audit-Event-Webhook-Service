@@ -1,5 +1,5 @@
 import { CosmosClient } from "@azure/cosmos"
-import { config } from "dotenv"
+import "dotenv/config";
 
 export const cosmosClient = new CosmosClient({
   endpoint: process.env.COSMOS_ENDPOINT!,
